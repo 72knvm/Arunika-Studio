@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/floating_dialogue.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/ui_floating_text_panel_v01.tres" id="2"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/ui_floating_text_tail_v01.tres" id="3"]
+[ext_resource type="Shader" path="res://assets/shaders/sprite_alpha_cutout.gdshader" id="4"]
+
+[sub_resource type="ShaderMaterial" id="Cutout"]
+shader = ExtResource("4")
+shader_parameter/alpha_threshold = 0.5
+
+[node name="FloatingDialogue" type="Control"]
+visible = false
+offset_right = 1672.0
+offset_bottom = 941.0
+mouse_filter = 2
+texture_filter = 1
+script = ExtResource("1")
+
+[node name="Panel" type="NinePatchRect" parent="."]
+material = SubResource("Cutout")
+mouse_filter = 2
+texture = ExtResource("2")
+patch_margin_left = 80
+patch_margin_top = 80
+patch_margin_right = 80
+patch_margin_bottom = 80
+scale = Vector2(0.25, 0.25)
+
+[node name="Tail" type="TextureRect" parent="."]
+material = SubResource("Cutout")
+offset_right = 40.0
+offset_bottom = 23.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 0
+
+[node name="Text" type="RichTextLabel" parent="."]
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.16, 0.13, 0.12, 1)
+theme_override_constants/line_separation = 4
+theme_override_font_sizes/normal_font_size = 32
+scroll_active = false
+autowrap_mode = 3

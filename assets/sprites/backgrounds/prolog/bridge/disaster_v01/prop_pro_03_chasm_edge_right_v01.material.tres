@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/bridge_edge_join.gdshader" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_floor_repeat_v01.png" id="2"]
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource("1")
+shader_parameter/floor_texture = ExtResource("2")
+shader_parameter/source_origin = Vector2(206, 397)
+shader_parameter/source_size = Vector2(900, 299)
+shader_parameter/display_size = Vector2(373, 124)
+shader_parameter/source_curb_y = 123.0
+shader_parameter/source_join_bottom_y = 263.0
+shader_parameter/join_on_right = true
+shader_parameter/floor_phase_at_join = 0.0
+shader_parameter/join_width = 64.0

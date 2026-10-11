@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/characters/saka/actions_v01/char_saka_sprint_right_v04.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="Frame0"]
+atlas = ExtResource("1")
+region = Rect2(83,84,302,370)
+margin = Rect2(346.5,133,798,150)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame1"]
+atlas = ExtResource("1")
+region = Rect2(570,84,224,370)
+margin = Rect2(400.5,133,876,150)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame2"]
+atlas = ExtResource("1")
+region = Rect2(949,84,292,370)
+margin = Rect2(336.5,133,808,150)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame3"]
+atlas = ExtResource("1")
+region = Rect2(1386,84,346,365)
+margin = Rect2(332.5,133,754,155)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame4"]
+atlas = ExtResource("1")
+region = Rect2(68,497,317,364)
+margin = Rect2(332.5,139,783,156)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame5"]
+atlas = ExtResource("1")
+region = Rect2(569,497,225,360)
+margin = Rect2(399.5,139,875,160)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame6"]
+atlas = ExtResource("1")
+region = Rect2(957,497,278,360)
+margin = Rect2(345.5,139,822,160)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame7"]
+atlas = ExtResource("1")
+region = Rect2(1377,498,361,344)
+margin = Rect2(320.5,140,739,176)
+filter_clip = true
+
+[resource]
+animations = [{"name":&"sprint","speed":12.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("Frame0")},{"duration":1.0,"texture":SubResource("Frame1")},{"duration":1.0,"texture":SubResource("Frame2")},{"duration":1.0,"texture":SubResource("Frame3")},{"duration":1.0,"texture":SubResource("Frame4")},{"duration":1.0,"texture":SubResource("Frame5")},{"duration":1.0,"texture":SubResource("Frame6")},{"duration":1.0,"texture":SubResource("Frame7")}]}]

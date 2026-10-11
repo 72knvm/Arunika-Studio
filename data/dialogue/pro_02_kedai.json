@@ -1,0 +1,21 @@
+[
+  {"speaker": "Tara", "text": "Nyam! A-aduh! Hah-hah... Panas banget lidahku!"},
+  {"speaker": "Saka", "text": "Kan... kebiasaan. Tiup dulu, Tara. Lontongnya nggak bakal kabur loncat ke selat kok."},
+  {"speaker": "Saka", "text": "Seminggu cuma makan pasta ransum kaleng di rusun langsung kalap gini."},
+  {"speaker": "Saka", "text": "Nih, habisin telurnya. Biar ada gizinya, badanmu itu kurus banget."},
+  {"speaker": "Tara", "text": "Bagi dua, pokoknya nggak ada bantahan!"},
+  {"speaker": "Tara", "text": "Liat tuh mata bionik Kakak, kedip-kedip redup gara-gara lembur ngelas pipa."},
+  {"speaker": "Tara", "text": "Kakak tuh kurus begini karena uangnya diabisin buat bayar sekolahku..."},
+  {"speaker": "Tara", "text": "Kakak juga harus makan bener, jangan minum kopi pait melulu!"},
+  {"speaker": "Saka", "text": "Iya, iya... bawel banget adik kesayangan Kakak ini."},
+  {"speaker": "Tara", "text": "Kak... kalau sabuk Kakek udah stabil dan tembus paten, kita pindah dari rusun sempit ini ya?"},
+  {"speaker": "Tara", "text": "Cari tempat yang ada jendela gedenya, terus janji bawa aku jalan-jalan ke pantai selatan."},
+  {"speaker": "Tara", "text": "Pantai beneran yang ada pasir putih sama ombaknya, bukan sekadar hologram dinding."},
+  {"speaker": "Saka", "text": "Iya, bocah. Janji."},
+  {"speaker": "Saka", "text": "Nanti kita sewa hover-car tua, kita muter-muter pesisir berdua sampai kamu bosen."},
+  {"speaker": "Tara", "text": "Kakak itu satu-satunya keluarga yang aku punya... Jangan paksain diri sampai sakit lagi ya, Kak."},
+  {"speaker": "Saka", "text": "Tenang aja, Dek. Kakak bakal selalu ada di sini buat jagain kamu."},
+  {"speaker": "Tara", "text": "Sip! Janji terkunci! Sekarang habisin sarapannya, habis ini Kakak temenin aku ke—", "on_reveal": "kedai_tremor"},
+  {"speaker": "Saka", "text": "Sial, ada apa ini? Kita harus pulang sekarang."},
+  {"speaker": "Tara", "text": "Iya, Kak."}
+]

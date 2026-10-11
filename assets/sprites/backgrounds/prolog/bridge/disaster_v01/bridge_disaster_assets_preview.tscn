@@ -1,0 +1,219 @@
+[gd_scene load_steps=27 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/bg_pro_03_sky_t0_v01.png" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/bg_pro_03_city_t2_v01.tres" id="2"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/bg_pro_03_sea_t1_v01.tres" id="3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_floor_repeat_v01.tres" id="4"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_left_v01.tres" id="5"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_right_v01.tres" id="6"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_rail_broken_v01.tres" id="7"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_billboard_slide_v01.tres" id="8"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_lamp_leaning_v01.tres" id="9"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_lamp_snapped_v01.tres" id="10"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_concrete_01_v01.tres" id="11"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_concrete_02_v01.tres" id="12"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_concrete_03_v01.tres" id="13"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_glass_01_v01.tres" id="14"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_glass_02_v01.tres" id="15"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_glass_03_v01.tres" id="16"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_metal_01_v01.tres" id="17"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_metal_02_v01.tres" id="18"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_metal_03_v01.tres" id="19"]
+[ext_resource type="Script" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/bridge_disaster_assets_preview.gd" id="20"]
+[ext_resource type="Shader" path="res://assets/shaders/sprite_alpha_cutout.gdshader" id="21"]
+[ext_resource type="Shader" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/disaster_glass.gdshader" id="22"]
+[ext_resource type="Material" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_left_v01.material.tres" id="23"]
+[ext_resource type="Material" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_right_v01.material.tres" id="24"]
+
+[sub_resource type="ShaderMaterial" id="Opaque"]
+shader = ExtResource("21")
+
+[sub_resource type="ShaderMaterial" id="Glass"]
+shader = ExtResource("22")
+
+[node name="BridgeDisasterAssetsPreview" type="Node2D"]
+texture_filter = 1
+physics_interpolation_mode = 2
+script = ExtResource("20")
+
+[node name="Sky" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.01, 1)
+
+[node name="Art" type="Sprite2D" parent="Sky"]
+position = Vector2(-120, 0)
+scale = Vector2(1.14354067, 1.00000000)
+texture = ExtResource("1")
+centered = false
+
+[node name="Sea" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.025, 1)
+
+[node name="Art" type="Sprite2D" parent="Sea"]
+material = SubResource("Opaque")
+position = Vector2(-120, 554)
+scale = Vector2(1.14354067, 1.06611570)
+texture = ExtResource("3")
+centered = false
+
+[node name="City" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.025, 1)
+
+[node name="Art" type="Sprite2D" parent="City"]
+material = SubResource("Opaque")
+position = Vector2(-120, 0)
+scale = Vector2(1.14354067, 0.92727273)
+texture = ExtResource("2")
+centered = false
+
+[node name="Foreground" type="Node2D" parent="."]
+
+[node name="Floor0" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(0, 832)
+scale = Vector2(-1.00000000, 0.88617886)
+texture = ExtResource("4")
+centered = false
+
+[node name="Floor1" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(0, 832)
+scale = Vector2(1.00000000, 0.88617886)
+texture = ExtResource("4")
+centered = false
+
+[node name="Floor2" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(768, 832)
+scale = Vector2(-1.00000000, 0.88617886)
+texture = ExtResource("4")
+centered = false
+
+[node name="Floor3" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(1593, 832)
+scale = Vector2(1.00000000, 0.88617886)
+texture = ExtResource("4")
+centered = false
+
+[node name="Floor4" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(2361, 832)
+scale = Vector2(-1.00000000, 0.88617886)
+texture = ExtResource("4")
+centered = false
+
+[node name="LeftBank" type="Sprite2D" parent="Foreground"]
+material = ExtResource("23")
+position = Vector2(600, 832)
+scale = Vector2(0.41156463, 0.41000000)
+texture = ExtResource("5")
+centered = false
+
+[node name="RightBank" type="Sprite2D" parent="Foreground"]
+material = ExtResource("24")
+position = Vector2(1220, 832)
+scale = Vector2(0.41444444, 0.41471572)
+texture = ExtResource("6")
+centered = false
+
+[node name="BrokenRailLeft" type="Sprite2D" parent="Foreground"]
+material = SubResource("Glass")
+position = Vector2(0, 630)
+scale = Vector2(0.43186583, 0.43162393)
+texture = ExtResource("7")
+centered = false
+
+[node name="BrokenRailRight" type="Sprite2D" parent="Foreground"]
+material = SubResource("Glass")
+position = Vector2(1295, 630)
+scale = Vector2(0.43186583, 0.43162393)
+texture = ExtResource("7")
+centered = false
+
+[node name="LeaningLamp" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(95, 218)
+scale = Vector2(0.46854942, 0.46887010)
+texture = ExtResource("9")
+centered = false
+
+[node name="SnappedLamp" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(1460, 488)
+scale = Vector2(0.41218130, 0.41162228)
+texture = ExtResource("10")
+centered = false
+
+[node name="SlideBillboard" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(44, 489)
+scale = Vector2(0.32188841, 0.32239658)
+texture = ExtResource("8")
+centered = false
+
+[node name="Concrete1" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(350, 862)
+scale = Vector2(0.10586011, 0.10714286)
+texture = ExtResource("11")
+centered = false
+
+[node name="Concrete2" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(800, 867)
+scale = Vector2(0.10714286, 0.10734463)
+texture = ExtResource("12")
+centered = false
+
+[node name="Concrete3" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(1500, 854)
+scale = Vector2(0.10840108, 0.10958904)
+texture = ExtResource("13")
+centered = false
+
+[node name="Glass1" type="Sprite2D" parent="Foreground"]
+material = SubResource("Glass")
+position = Vector2(210, 856)
+scale = Vector2(0.08000000, 0.07894737)
+texture = ExtResource("14")
+centered = false
+
+[node name="Glass2" type="Sprite2D" parent="Foreground"]
+material = SubResource("Glass")
+position = Vector2(760, 870)
+scale = Vector2(0.08639309, 0.08839779)
+texture = ExtResource("15")
+centered = false
+
+[node name="Glass3" type="Sprite2D" parent="Foreground"]
+material = SubResource("Glass")
+position = Vector2(1330, 854)
+scale = Vector2(0.07570978, 0.07619048)
+texture = ExtResource("16")
+centered = false
+
+[node name="Metal1" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(115, 853)
+scale = Vector2(0.09600000, 0.09705882)
+texture = ExtResource("17")
+centered = false
+
+[node name="Metal2" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(700, 855)
+scale = Vector2(0.09736308, 0.09810127)
+texture = ExtResource("18")
+centered = false
+
+[node name="Metal3" type="Sprite2D" parent="Foreground"]
+material = SubResource("Opaque")
+position = Vector2(1590, 861)
+scale = Vector2(0.08730159, 0.08741259)
+texture = ExtResource("19")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(836, 470.5)
+

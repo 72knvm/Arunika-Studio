@@ -1,0 +1,14 @@
+[
+  {"speaker": "Tara", "utterance": 1, "text": "Kak Saka! Bangun, ih! Alarmnya udah jerit-jerit dari tadi masih aja merem."},
+  {"speaker": "Tara", "utterance": 1, "text": "Kebiasaan banget begadang sampai subuh di depan meja solder... Perutku udah demo ini, Kak!"},
+  {"speaker": "Saka", "utterance": 2, "text": "Hoamm... Iya, Tara, ini udah melek kok... Jam berapa emangnya?"},
+  {"speaker": "Tara", "utterance": 3, "on_advance": "wake_saka", "text": "Udah mau jam delapan!"},
+  {"speaker": "Tara", "utterance": 3, "text": "Kalau Kakak sakit gara-gara kurang tidur, siapa yang mau jagain aku?"},
+  {"speaker": "Tara", "utterance": 3, "text": "Mana persediaan mie instan di lemari udah habis dari kemarin."},
+  {"speaker": "Saka", "utterance": 4, "text": "Iya, maaf ya."},
+  {"speaker": "Saka", "utterance": 4, "text": "Semalem Kakak begadang nyelesein solderan modul konektor buat lensa bionik Kakak,"},
+  {"speaker": "Saka", "utterance": 4, "text": "nyocokin sama catatan lama Kakek doang. Makanya sampai lupa waktu."},
+  {"speaker": "Saka", "utterance": 4, "text": "Nggak usah cemberut gitu, pagi ini Kakak yang traktir sarapan di luar."},
+  {"speaker": "Tara", "utterance": 5, "text": "Beneran ya? Lontong kari di kedai seberang jembatan, kan?"},
+  {"speaker": "Tara", "utterance": 5, "text": "Pokoknya porsi jumbo pake telur!"}
+]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/prolog/waterfront_walk_scene.tscn" id="1"]
+[ext_resource type="Script" path="res://scripts/prolog/bridge_layer_test.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/prolog/bridge_walk_dialogue.gd" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/floating_dialogue.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/prolog/kedai_set.tscn" id="5"]
+
+[node name="BridgeLayerTest" instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="Kedai" parent="." index="3" instance=ExtResource("5")]
+
+[node name="WalkDialogue" type="Node" parent="."]
+script = ExtResource("3")
+
+[node name="Interface" type="CanvasLayer" parent="WalkDialogue"]
+physics_interpolation_mode = 2
+layer = 20
+
+[node name="Bubble" parent="WalkDialogue/Interface" instance=ExtResource("4")]

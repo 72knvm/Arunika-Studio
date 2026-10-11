@@ -1,0 +1,38 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/prolog/waterfront_walk_scene.tscn" id="1"]
+[ext_resource type="Script" path="res://scripts/prolog/kedai_walk_scene.gd" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/prolog/kedai_set.tscn" id="3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/characters/saka_seated_v01.tres" id="4"]
+[ext_resource type="Texture2D" path="res://assets/sprites/characters/tara_seated_v01.tres" id="5"]
+[ext_resource type="Shader" path="res://assets/shaders/sprite_alpha_cutout.gdshader" id="6"]
+[ext_resource type="Shader" path="res://assets/shaders/saka_seated_eye.gdshader" id="7"]
+
+[sub_resource type="ShaderMaterial" id="Cutout"]
+shader = ExtResource("6")
+shader_parameter/alpha_threshold = 0.5
+
+[sub_resource type="ShaderMaterial" id="SakaCutout"]
+resource_local_to_scene = true
+shader = ExtResource("7")
+
+[node name="KedaiWalkScene" instance=ExtResource("1")]
+script = ExtResource("2")
+backdrop_scroll_offset = 120.0
+
+[node name="Kedai" parent="." index="3" instance=ExtResource("3")]
+
+[node name="SeatedActors" type="Node2D" parent="."]
+visible = false
+physics_interpolation_mode = 2
+z_index = 2
+
+[node name="Saka" type="Sprite2D" parent="SeatedActors"]
+texture = ExtResource("4")
+material = SubResource("SakaCutout")
+centered = false
+
+[node name="Tara" type="Sprite2D" parent="SeatedActors"]
+texture = ExtResource("5")
+material = SubResource("Cutout")
+centered = false

@@ -1,0 +1,302 @@
+{
+  "canvas": [
+    1672,
+    941
+  ],
+  "source_horizon_y": 578,
+  "sea_world_top_y": 554,
+  "floor_world_top_y": 832,
+  "walking_feet_y": 870,
+  "rail_world_bottom_y": 832,
+  "lamp_world_bottom_y": 828,
+  "billboard_lowest_y": 715,
+  "slide_clearance": 155,
+  "existing_slide_height": 132,
+  "status": "Separate generated art pack and review scene; no changes to gameplay scenes or collisions.",
+  "assets": {
+    "bg_pro_03_sky_t0_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/bg_pro_03_sky_t0_v01.png",
+      "display_size": [
+        1672,
+        941
+      ],
+      "notes": "Opaque sky. Preserve original sun and cloud-band composition."
+    },
+    "bg_pro_03_city_t2_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/bg_pro_03_city_t2_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/bg_pro_03_city_t2_v01.png",
+      "region": [
+        0,
+        0,
+        1672,
+        660
+      ],
+      "display_size": [
+        1672,
+        612
+      ],
+      "notes": "Generated city base is y660. Normalize this region to height612, restoring the old shore level. Left/right landmarks remain recognizable; damaged contours are redrawn."
+    },
+    "bg_pro_03_sea_t1_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/bg_pro_03_sea_t1_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/bg_pro_03_sea_t1_v01.png",
+      "region": [
+        0,
+        578,
+        1672,
+        363
+      ],
+      "display_size": [
+        1672,
+        387
+      ],
+      "notes": "Source horizon578. Place at world y554, matching waterfront_walk_scene.gd shore overlap."
+    },
+    "prop_pro_03_floor_repeat_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_floor_repeat_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_floor_repeat_v01.png",
+      "region": [
+        0,
+        818,
+        384,
+        123
+      ],
+      "display_size": [
+        384,
+        109
+      ],
+      "notes": "Place y832. Alternate horizontal mirroring of THIS SAME tile: neighboring borders then sample identical source pixels. Do not use unrelated tile variants at its seams."
+    },
+    "prop_pro_03_chasm_edge_left_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_left_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_left_v01.png",
+      "region": [
+        1000,
+        403,
+        882,
+        300
+      ],
+      "display_size": [
+        363,
+        123
+      ],
+      "notes": "Broken face points RIGHT. Use the matching .tscn/.material.tres: it aligns paving/curb/fascia bands and matches floor texture at the joining edge.",
+      "material": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_left_v01.material.tres",
+      "packed_scene": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_left_v01.tscn",
+      "floor_phase_at_join": 600
+    },
+    "prop_pro_03_chasm_edge_right_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_right_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_right_v01.png",
+      "region": [
+        206,
+        397,
+        900,
+        299
+      ],
+      "display_size": [
+        373,
+        124
+      ],
+      "notes": "Broken face points LEFT. Use the matching .tscn/.material.tres for aligned bands and floor-texture continuity. Omit floor between banks.",
+      "material": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_right_v01.material.tres",
+      "packed_scene": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_right_v01.tscn",
+      "floor_phase_at_join": 0
+    },
+    "prop_pro_03_rail_broken_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_rail_broken_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_rail_broken_v01.png",
+      "region": [
+        147,
+        267,
+        1431,
+        468
+      ],
+      "display_size": [
+        618,
+        202
+      ],
+      "notes": ""
+    },
+    "prop_pro_03_billboard_slide_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_billboard_slide_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_billboard_slide_v01.png",
+      "region": [
+        34,
+        21,
+        1864,
+        701
+      ],
+      "display_size": [
+        600,
+        226
+      ],
+      "notes": ""
+    },
+    "prop_pro_03_lamp_leaning_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_lamp_leaning_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_lamp_leaning_v01.png",
+      "region": [
+        175,
+        121,
+        779,
+        1301
+      ],
+      "display_size": [
+        365,
+        610
+      ],
+      "notes": ""
+    },
+    "prop_pro_03_lamp_snapped_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_lamp_snapped_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_lamp_snapped_v01.png",
+      "region": [
+        237,
+        436,
+        706,
+        826
+      ],
+      "display_size": [
+        291,
+        340
+      ],
+      "notes": ""
+    },
+    "prop_pro_03_debris_concrete_01_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_concrete_01_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_concrete_sheet_v01.png",
+      "region": [
+        122,
+        372,
+        529,
+        224
+      ],
+      "display_size": [
+        56,
+        24
+      ],
+      "notes": "Decorative only. Glass translucency is applied by the supplied preview shader; generated glass faces are opaque cyan."
+    },
+    "prop_pro_03_debris_concrete_02_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_concrete_02_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_concrete_sheet_v01.png",
+      "region": [
+        832,
+        430,
+        448,
+        177
+      ],
+      "display_size": [
+        48,
+        19
+      ],
+      "notes": "Decorative only. Glass translucency is applied by the supplied preview shader; generated glass faces are opaque cyan."
+    },
+    "prop_pro_03_debris_concrete_03_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_concrete_03_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_concrete_sheet_v01.png",
+      "region": [
+        1568,
+        327,
+        369,
+        292
+      ],
+      "display_size": [
+        40,
+        32
+      ],
+      "notes": "Decorative only. Glass translucency is applied by the supplied preview shader; generated glass faces are opaque cyan."
+    },
+    "prop_pro_03_debris_glass_01_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_glass_01_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_glass_sheet_v01.png",
+      "region": [
+        236,
+        252,
+        325,
+        380
+      ],
+      "display_size": [
+        26,
+        30
+      ],
+      "notes": "Decorative only. Glass translucency is applied by the supplied preview shader; generated glass faces are opaque cyan."
+    },
+    "prop_pro_03_debris_glass_02_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_glass_02_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_glass_sheet_v01.png",
+      "region": [
+        750,
+        447,
+        463,
+        181
+      ],
+      "display_size": [
+        40,
+        16
+      ],
+      "notes": "Decorative only. Glass translucency is applied by the supplied preview shader; generated glass faces are opaque cyan."
+    },
+    "prop_pro_03_debris_glass_03_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_glass_03_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_glass_sheet_v01.png",
+      "region": [
+        1419,
+        212,
+        317,
+        420
+      ],
+      "display_size": [
+        24,
+        32
+      ],
+      "notes": "Decorative only. Glass translucency is applied by the supplied preview shader; generated glass faces are opaque cyan."
+    },
+    "prop_pro_03_debris_metal_01_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_metal_01_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_metal_sheet_v01.png",
+      "region": [
+        136,
+        228,
+        500,
+        340
+      ],
+      "display_size": [
+        48,
+        33
+      ],
+      "notes": "Decorative only. Glass translucency is applied by the supplied preview shader; generated glass faces are opaque cyan."
+    },
+    "prop_pro_03_debris_metal_02_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_metal_02_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_metal_sheet_v01.png",
+      "region": [
+        846,
+        239,
+        493,
+        316
+      ],
+      "display_size": [
+        48,
+        31
+      ],
+      "notes": "Decorative only. Glass translucency is applied by the supplied preview shader; generated glass faces are opaque cyan."
+    },
+    "prop_pro_03_debris_metal_03_v01": {
+      "resource": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_metal_03_v01.tres",
+      "png": "res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_metal_sheet_v01.png",
+      "region": [
+        1533,
+        263,
+        504,
+        286
+      ],
+      "display_size": [
+        44,
+        25
+      ],
+      "notes": "Decorative only. Glass translucency is applied by the supplied preview shader; generated glass faces are opaque cyan."
+    }
+  }
+}

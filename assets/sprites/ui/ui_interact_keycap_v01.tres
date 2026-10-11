@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/ui_interact_keycap_v01.png" id="1_keycap"]
+
+[resource]
+atlas = ExtResource("1_keycap")
+region = Rect2(288, 285, 679, 684)

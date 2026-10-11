@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_qte_metal_slide_v01.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_qte_concrete_jump_v01.tscn" id="2"]
+[ext_resource type="Script" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/qte_debris_preview_v01.gd" id="3"]
+
+[node name="QTEDebrisPreview" type="Node2D"]
+texture_filter = 1
+script = ExtResource("3")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+offset_right = 1672.0
+offset_bottom = 941.0
+mouse_filter = 2
+color = Color(0.08, 0.08, 0.10, 1)
+
+[node name="Title" type="Label" parent="."]
+offset_left = 120.0
+offset_top = 110.0
+theme_override_colors/font_color = Color(0.94, 0.90, 0.82, 1)
+theme_override_font_sizes/font_size = 32
+text = "PUING QTE — ASTANAPURA 2150"
+
+[node name="SlideDebris" parent="." instance=ExtResource("1")]
+position = Vector2(480, 460)
+
+[node name="JumpDebris" parent="." instance=ExtResource("2")]
+position = Vector2(1190, 460)
+
+[node name="SlideLabel" type="Label" parent="."]
+offset_left = 270.0
+offset_top = 560.0
+theme_override_colors/font_color = Color(0.94, 0.90, 0.82, 1)
+theme_override_font_sizes/font_size = 24
+text = "SLIDE / MERUNDUK"
+
+[node name="JumpLabel" type="Label" parent="."]
+offset_left = 1070.0
+offset_top = 560.0
+theme_override_colors/font_color = Color(0.94, 0.90, 0.82, 1)
+theme_override_font_sizes/font_size = 24
+text = "LOMPAT"

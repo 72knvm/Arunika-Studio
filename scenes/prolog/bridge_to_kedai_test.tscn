@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/prolog/prolog_flow.tscn" id="1"]
+
+[node name="BridgeToKedaiTest" instance=ExtResource("1")]
+starting_location = 1

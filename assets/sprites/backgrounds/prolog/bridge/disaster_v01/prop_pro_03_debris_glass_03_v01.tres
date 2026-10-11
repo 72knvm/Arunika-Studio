@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_debris_glass_sheet_v01.png" id="1"]
+
+[resource]
+atlas = ExtResource("1")
+region = Rect2(1419, 212, 317, 420)
+filter_clip = true

@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_qte_concrete_jump_v01.tres" id="1"]
+[ext_resource type="Shader" path="res://assets/shaders/sprite_alpha_cutout.gdshader" id="2"]
+
+[sub_resource type="ShaderMaterial" id="Opaque"]
+shader = ExtResource("2")
+
+[node name="FlyingDebris" type="Node2D"]
+texture_filter = 1
+
+[node name="Art" type="Sprite2D" parent="."]
+material = SubResource("Opaque")
+scale = Vector2(0.17167382, 0.17167382)
+texture = ExtResource("1")

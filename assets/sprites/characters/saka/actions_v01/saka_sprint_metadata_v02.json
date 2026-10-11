@@ -1,0 +1,113 @@
+{
+  "size": [
+    1774,
+    887
+  ],
+  "alpha": [
+    0,
+    255
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "source_version": 1,
+      "bounds": [
+        86,
+        84,
+        380,
+        451
+      ],
+      "pivot_x": 286.5,
+      "baseline_y": 451
+    },
+    {
+      "frame": 2,
+      "source_version": 1,
+      "bounds": [
+        573,
+        83,
+        790,
+        451
+      ],
+      "pivot_x": 719.5,
+      "baseline_y": 451
+    },
+    {
+      "frame": 3,
+      "source_version": 2,
+      "bounds": [
+        952,
+        87,
+        1239,
+        453
+      ],
+      "pivot_x": 1162.5,
+      "baseline_y": 451
+    },
+    {
+      "frame": 4,
+      "source_version": 2,
+      "bounds": [
+        1380,
+        87,
+        1723,
+        438
+      ],
+      "pivot_x": 1603.5,
+      "baseline_y": 451
+    },
+    {
+      "frame": 5,
+      "source_version": 1,
+      "bounds": [
+        72,
+        496,
+        381,
+        858
+      ],
+      "pivot_x": 285.5,
+      "baseline_y": 858
+    },
+    {
+      "frame": 6,
+      "source_version": 1,
+      "bounds": [
+        573,
+        496,
+        790,
+        854
+      ],
+      "pivot_x": 719.5,
+      "baseline_y": 858
+    },
+    {
+      "frame": 7,
+      "source_version": 1,
+      "bounds": [
+        959,
+        496,
+        1232,
+        854
+      ],
+      "pivot_x": 1161.5,
+      "baseline_y": 858
+    },
+    {
+      "frame": 8,
+      "source_version": 1,
+      "bounds": [
+        1380,
+        496,
+        1734,
+        838
+      ],
+      "pivot_x": 1606.5,
+      "baseline_y": 858
+    }
+  ],
+  "scale": 0.81,
+  "anchor": [
+    550,
+    500
+  ]
+}

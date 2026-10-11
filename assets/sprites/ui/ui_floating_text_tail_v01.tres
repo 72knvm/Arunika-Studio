@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/ui_floating_text_tail_v01.png" id="1_tail"]
+
+[resource]
+atlas = ExtResource("1_tail")
+region = Rect2(260, 277, 1067, 606)
+filter_clip = true

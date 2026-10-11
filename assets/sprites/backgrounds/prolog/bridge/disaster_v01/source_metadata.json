@@ -1,0 +1,293 @@
+[
+  {
+    "file": "bg_pro_03_city_t2_v01.png",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bounds128": [
+      0,
+      9,
+      1672,
+      660
+    ]
+  },
+  {
+    "file": "bg_pro_03_sea_t1_v01.png",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "bounds128": [
+      0,
+      574,
+      1672,
+      941
+    ]
+  },
+  {
+    "file": "bg_pro_03_sky_t0_v01.png",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "alpha": null,
+    "bounds128": [
+      0,
+      0,
+      1672,
+      941
+    ]
+  },
+  {
+    "file": "prop_pro_03_billboard_slide_v01.png",
+    "size": [
+      1919,
+      820
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bounds128": [
+      34,
+      21,
+      1898,
+      722
+    ]
+  },
+  {
+    "file": "prop_pro_03_chasm_edge_left_v01.png",
+    "size": [
+      2079,
+      756
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bounds128": [
+      90,
+      403,
+      1882,
+      703
+    ]
+  },
+  {
+    "file": "prop_pro_03_chasm_edge_right_v01.png",
+    "size": [
+      2079,
+      756
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bounds128": [
+      206,
+      397,
+      1959,
+      696
+    ]
+  },
+  {
+    "file": "prop_pro_03_debris_concrete_sheet_v01.png",
+    "size": [
+      2048,
+      768
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "bounds128": [
+      122,
+      327,
+      1937,
+      619
+    ],
+    "cells": [
+      [
+        122,
+        372,
+        651,
+        596
+      ],
+      [
+        832,
+        430,
+        1280,
+        607
+      ],
+      [
+        1568,
+        327,
+        1937,
+        619
+      ]
+    ]
+  },
+  {
+    "file": "prop_pro_03_debris_glass_sheet_v01.png",
+    "size": [
+      1942,
+      809
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bounds128": [
+      236,
+      212,
+      1736,
+      632
+    ],
+    "cells": [
+      [
+        236,
+        252,
+        561,
+        632
+      ],
+      [
+        750,
+        447,
+        1213,
+        628
+      ],
+      [
+        1419,
+        212,
+        1736,
+        632
+      ]
+    ]
+  },
+  {
+    "file": "prop_pro_03_debris_metal_sheet_v01.png",
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bounds128": [
+      136,
+      228,
+      2037,
+      568
+    ],
+    "cells": [
+      [
+        136,
+        228,
+        636,
+        568
+      ],
+      [
+        846,
+        239,
+        1339,
+        555
+      ],
+      [
+        1533,
+        263,
+        2037,
+        549
+      ]
+    ]
+  },
+  {
+    "file": "prop_pro_03_floor_repeat_v01.png",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bounds128": [
+      0,
+      818,
+      1672,
+      941
+    ]
+  },
+  {
+    "file": "prop_pro_03_lamp_leaning_v01.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bounds128": [
+      175,
+      121,
+      954,
+      1422
+    ]
+  },
+  {
+    "file": "prop_pro_03_lamp_snapped_v01.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "bounds128": [
+      237,
+      436,
+      943,
+      1262
+    ]
+  },
+  {
+    "file": "prop_pro_03_rail_broken_v01.png",
+    "size": [
+      1729,
+      910
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bounds128": [
+      147,
+      267,
+      1578,
+      735
+    ]
+  }
+]

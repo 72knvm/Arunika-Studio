@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/prolog/kedai_set.gd" id="1"]
+
+[node name="Kedai" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1")
+
+[node name="Kiosks" type="Sprite2D" parent="."]
+
+[node name="NeighborRow" type="Sprite2D" parent="."]
+
+[node name="FirstTable" type="Sprite2D" parent="."]
+
+[node name="SecondTable" type="Sprite2D" parent="."]
+
+[node name="Meal" type="Sprite2D" parent="."]
+visible = false
+
+[node name="Seats" type="Node2D" parent="."]
+
+[node name="Chair1" type="Marker2D" parent="Seats"]
+
+[node name="Chair2" type="Marker2D" parent="Seats"]
+
+[node name="Chair3" type="Marker2D" parent="Seats"]
+
+[node name="Chair4" type="Marker2D" parent="Seats"]

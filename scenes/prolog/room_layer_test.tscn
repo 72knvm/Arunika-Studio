@@ -1,0 +1,88 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/prolog/room_layer_test.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/room/bg_pro_01_sky_t0.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/room/bg_pro_01_city_t1.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/room/bg_pro_01_room_shell_t2.png" id="4"]
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/room/bg_pro_01_furniture_t3.png" id="5"]
+[ext_resource type="Script" path="res://scripts/prolog/saka_walk_preview.gd" id="6"]
+[ext_resource type="Shader" path="res://assets/shaders/saka_shared_palette.gdshader" id="7"]
+[ext_resource type="PackedScene" path="res://scenes/prolog/saka_sleep_pose.tscn" id="8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_saka"]
+shader = ExtResource("7")
+shader_parameter/alpha_threshold = 0.5
+
+[node name="RoomLayerTest" type="Node2D"]
+physics_interpolation_mode = 2
+texture_filter = 1
+script = ExtResource("1")
+
+[node name="WindowClip" type="Control" parent="."]
+clip_contents = true
+offset_left = 239.0
+offset_top = 254.0
+offset_right = 944.0
+offset_bottom = 503.0
+mouse_filter = 2
+
+[node name="Sky" type="Sprite2D" parent="WindowClip"]
+position = Vector2(-195, -254)
+texture = ExtResource("2")
+centered = false
+
+[node name="City" type="Sprite2D" parent="WindowClip"]
+position = Vector2(-239, -254)
+texture = ExtResource("3")
+centered = false
+
+[node name="RoomShell" type="Sprite2D" parent="."]
+texture = ExtResource("4")
+centered = false
+
+[node name="Furniture" type="Sprite2D" parent="."]
+scale = Vector2(0.94, 0.94)
+texture = ExtResource("5")
+centered = false
+
+[node name="SakaPreview" type="Node2D" parent="."]
+position = Vector2(565, 760)
+script = ExtResource("6")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="SakaPreview"]
+material = SubResource("ShaderMaterial_saka")
+
+[node name="SleepingSaka" parent="." instance=ExtResource("8")]
+visible = false
+position = Vector2(65, 525)
+
+[node name="Overlay" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="PanelContainer" parent="Overlay"]
+offset_left = 32.0
+offset_top = 850.0
+offset_right = 1640.0
+offset_bottom = 927.0
+
+[node name="Margin" type="MarginContainer" parent="Overlay/Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 10
+
+[node name="Controls" type="VBoxContainer" parent="Overlay/Panel/Margin"]
+layout_mode = 2
+
+[node name="Help" type="Label" parent="Overlay/Panel/Margin/Controls"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "SAKA WALK  |  A/D atau ←/→: jalan  |  Q/E: latar  |  R: reset  |  1–4: layer  |  5: Saka  |  F1: panel"
+
+[node name="Slider" type="HSlider" parent="Overlay/Panel/Margin/Controls"]
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+min_value = -40.0
+max_value = 40.0
+step = 1.0
+focus_mode = 0

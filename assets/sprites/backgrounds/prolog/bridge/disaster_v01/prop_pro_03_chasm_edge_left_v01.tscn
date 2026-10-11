@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_left_v01.tres" id="1"]
+[ext_resource type="Material" path="res://assets/sprites/backgrounds/prolog/bridge/disaster_v01/prop_pro_03_chasm_edge_left_v01.material.tres" id="2"]
+
+[node name="ChasmEdgeLeft" type="Node2D"]
+texture_filter = 1
+
+[node name="Art" type="Sprite2D" parent="."]
+material = ExtResource("2")
+scale = Vector2(0.41156463, 0.41000000)
+texture = ExtResource("1")
+centered = false

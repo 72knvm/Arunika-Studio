@@ -1,0 +1,31 @@
+{
+  "id": "grandpa_safe",
+  "prompt": "Bagaimana Saka menjawab?",
+  "options": [
+    {
+      "id": "protective",
+      "label": "Rahasiakan pesan Kakek",
+      "lines": [
+        {"speaker": "Saka", "text": "Boro-boro ngasih tahu. Kamu kayak nggak kenal Kakek aja, suka banget main teka-teki misterius."},
+        {"speaker": "Saka", "text": "Kakek cuma pesen brankas itu cuma boleh dibuka kalau keadaan keluarga kita bener-bener darurat."},
+        {"speaker": "Saka", "text": "Paling isinya ya prototipe sabuk besi tua yang dulu sering Kakek bangga-banggain."},
+        {"speaker": "Saka", "text": "Jangan dipikirin, hari ini fokus habisin sarapanmu aja."},
+        {"speaker": "Tara", "text": "Ihh, selalu aja main rahasia-rahasiaan sama aku..."},
+        {"speaker": "Tara", "text": "Padahal aku kan udah bukan anak kecil lagi, Kak."}
+      ]
+    },
+    {
+      "id": "honest",
+      "label": "Jelaskan catatan Kakek",
+      "lines": [
+        {"speaker": "Saka", "text": "Kakek nggak pernah ngasih tahu kodenya, Dek."},
+        {"speaker": "Saka", "text": "Tapi di catatan lamanya, Kakek bilang di dalem brankas itu ada prototipe sabuk pelindung keluarga yang Kakek rancang seumur hidup."},
+        {"speaker": "Saka", "text": "Katanya sabuk itu dirakit khusus buat jaga-jaga kalau hari tergelap keluarga kita tiba."},
+        {"speaker": "Saka", "text": "Makanya semalem Kakak penasaran banget nyolder kabel konektornya."},
+        {"speaker": "Tara", "text": "Wih, peninggalan Kakek sekeren itu?!"},
+        {"speaker": "Tara", "text": "Kalau Kakak yang megang, aku yakin pasti beres."},
+        {"speaker": "Tara", "text": "Siapa dulu dong montir nomor satu kebanggaanku!"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "speaker": "Tara",
+    "pause_before": 2.5,
+    "pages": [
+      "Wahh... seger banget!",
+      "Tumben-tumbenan asap smog distrik bawah nggak bikin sesek fajar ini.",
+      "Angin selatnya adem, langitnya juga oranye bersih!"
+    ]
+  },
+  {
+    "speaker": "Saka",
+    "pause_before": 0.8,
+    "pages": [
+      "Iya. Jarang juga kamu bangun pagi tanpa disiram air.",
+      "Biasanya jam segini masih molor meluk guling."
+    ]
+  },
+  {
+    "speaker": "Tara",
+    "pause_before": 0.8,
+    "pages": [
+      "Enak aja! Aku kan bangun demi lontong kari...",
+      "Eh tapi ngomong-ngomong, brankas besi peninggalan Kakek",
+      "di kolong meja bengkel emang belum bisa dibuka ya, Kak?",
+      "Penasaran banget aku isinya...",
+      "Kakek beneran nggak pernah ngasih tahu kodenya?"
+    ],
+    "on_finish": "grandpa_safe"
+  },
+  {
+    "speaker": "Tara",
+    "pause_before": 3.0,
+    "pages": [
+      "Tuh kan, baunya udah kecium sampai sini!",
+      "Bumbu karinya Mak Inah emang nggak ada tandingannya.",
+      "Cepetan jalannya, Kak!"
+    ]
+  }
+]

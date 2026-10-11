@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/characters/saka/char_saka_sleep_right_v01.png" id="1"]
+[ext_resource type="Shader" path="res://assets/shaders/sprite_alpha_cutout.gdshader" id="2"]
+
+[sub_resource type="AtlasTexture" id="SleepTexture"]
+atlas = ExtResource("1")
+region = Rect2(97, 111, 1989, 529)
+filter_clip = true
+
+[sub_resource type="ShaderMaterial" id="SleepMaterial"]
+shader = ExtResource("2")
+shader_parameter/alpha_threshold = 0.5
+
+[node name="SleepingSaka" type="Node2D"]
+texture_filter = 1
+
+[node name="Sprite" type="Sprite2D" parent="."]
+material = SubResource("SleepMaterial")
+texture = SubResource("SleepTexture")
+centered = false
+scale = Vector2(0.216189, 0.216189)

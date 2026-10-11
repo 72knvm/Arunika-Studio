@@ -1,0 +1,44 @@
+[
+  {
+    "name": "prop_pro_03_qte_concrete_jump_v01",
+    "size": [
+      1906,
+      825
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "bounds": [
+      255,
+      291,
+      1653,
+      633
+    ],
+    "display_size": [
+      240,
+      58.71
+    ]
+  },
+  {
+    "name": "prop_pro_03_qte_metal_slide_v01",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "bounds": [
+      145,
+      365,
+      2052,
+      578
+    ],
+    "display_size": [
+      420,
+      46.91
+    ]
+  }
+]

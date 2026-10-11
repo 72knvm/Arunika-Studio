@@ -1,0 +1,56 @@
+[gd_resource type="SpriteFrames" load_steps=11 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/characters/saka/actions_v01/char_saka_sprint_right_v05.png" id="1"]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/characters/saka/actions_v01/char_saka_sprint_right_v04.png" id="2"]
+
+[sub_resource type="AtlasTexture" id="Frame0"]
+atlas = ExtResource("2")
+region = Rect2(83,84,302,370)
+margin = Rect2(346.5,133,798,150)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame1"]
+atlas = ExtResource("2")
+region = Rect2(570,84,224,370)
+margin = Rect2(400.5,133,876,150)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame2"]
+atlas = ExtResource("2")
+region = Rect2(949,84,292,370)
+margin = Rect2(336.5,133,808,150)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame3"]
+atlas = ExtResource("2")
+region = Rect2(1386,84,346,365)
+margin = Rect2(332.5,133,754,155)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame4"]
+atlas = ExtResource("1")
+region = Rect2(67,500,320,363)
+margin = Rect2(331.5,142,780,157)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame5"]
+atlas = ExtResource("1")
+region = Rect2(566,500,232,360)
+margin = Rect2(396.5,142,868,160)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame6"]
+atlas = ExtResource("1")
+region = Rect2(954,500,285,362)
+margin = Rect2(342.5,142,815,158)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Frame7"]
+atlas = ExtResource("1")
+region = Rect2(1376,500,364,345)
+margin = Rect2(319.5,142,736,175)
+filter_clip = true
+
+[resource]
+animations = [{"name":&"sprint","speed":12.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("Frame0")},{"duration":1.0,"texture":SubResource("Frame1")},{"duration":1.0,"texture":SubResource("Frame2")},{"duration":1.0,"texture":SubResource("Frame3")},{"duration":1.0,"texture":SubResource("Frame4")},{"duration":1.0,"texture":SubResource("Frame5")},{"duration":1.0,"texture":SubResource("Frame6")},{"duration":1.0,"texture":SubResource("Frame7")}]}]
