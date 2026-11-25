@@ -1,0 +1,40 @@
+[
+  {
+    "speaker": "Tara",
+    "pause_before": 2.5,
+    "pages": [
+      "Wah... anginnya enak banget!",
+      "Pagi ini asap dari distrik bawah nggak setebal biasanya.",
+      "Biasanya gedung seberang aja ketutup."
+    ]
+  },
+  {
+    "speaker": "Saka",
+    "pause_before": 0.8,
+    "pages": [
+      "Tadi katanya udah kelaparan.",
+      "Sekarang malah asyik lihat pemandangan."
+    ]
+  },
+  {
+    "speaker": "Tara",
+    "pause_before": 0.8,
+    "pages": [
+      "Kan bisa lapar sambil lihat-lihat!",
+      "Eh, Kak... brankas Kakek di bawah meja bengkel itu",
+      "masih belum bisa dibuka, ya?",
+      "Aku penasaran isinya...",
+      "Kakek beneran nggak pernah ngasih tahu kodenya?"
+    ],
+    "on_finish": "grandpa_safe"
+  },
+  {
+    "speaker": "Tara",
+    "pause_before": 3.0,
+    "pages": [
+      "Tuh kan, baunya udah kecium sampai sini!",
+      "Bumbu karinya Mak Inah emang nggak ada tandingannya.",
+      "Cepetan jalannya, Kak!"
+    ]
+  }
+]

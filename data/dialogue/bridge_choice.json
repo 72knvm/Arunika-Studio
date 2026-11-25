@@ -1,0 +1,32 @@
+{
+  "id": "grandpa_safe",
+  "prompt": "Bagaimana Saka menjawab?",
+  "options": [
+    {
+      "id": "protective",
+      "label": "Rahasiakan pesan Kakek",
+      "lines": [
+        {"speaker": "Saka", "text": "Belum ketemu kodenya, Dek."},
+        {"speaker": "Saka", "text": "Kakek memang paling senang bikin orang penasaran."},
+        {"speaker": "Saka", "text": "Nanti Kakak urus. Kamu nggak usah ikut pusing."},
+        {"speaker": "Saka", "text": "Sekarang sarapan dulu, ya?"},
+        {"speaker": "Tara", "text": "Ih, selalu begitu kalau aku tanya soal Kakek."},
+        {"speaker": "Tara", "text": "Aku juga pengin tahu, Kak."}
+      ]
+    },
+    {
+      "id": "honest",
+      "label": "Jelaskan catatan Kakek",
+      "lines": [
+        {"speaker": "Saka", "text": "Kakek nggak pernah ngasih tahu kodenya, Dek."},
+        {"speaker": "Saka", "text": "Di catatannya ada rancangan sabuk. Sepertinya prototipenya disimpan di situ."},
+        {"speaker": "Saka", "text": "Pesan Kakek, bukanya kalau keluarga kita benar-benar dalam bahaya."},
+        {"speaker": "Saka", "text": "Konektor yang Kakak kerjakan semalam juga ada di rancangan itu."},
+        {"speaker": "Tara", "text": "Jadi... lensanya Kakak bisa disambung ke sabuk itu?"},
+        {"speaker": "Saka", "text": "Itu yang lagi Kakak coba. Makanya konektornya Kakak sesuaikan buat lensa ini. Tapi sabuknya sendiri belum pernah Kakak periksa."},
+        {"speaker": "Tara", "text": "Kalau udah kebuka, aku mau lihat juga. Jangan dibongkar sendirian!"},
+        {"speaker": "Saka", "text": "Iya, Dek. Nanti kita buka bareng."}
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3]
 
 [ext_resource type="Script" path="res://scripts/ui/interaction_prompt.gd" id="1"]
-[ext_resource type="Texture2D" path="res://assets/sprites/ui/ui_interact_keycap_v01.tres" id="2"]
-[ext_resource type="Shader" path="res://assets/shaders/sprite_alpha_cutout.gdshader" id="3"]
+[ext_resource type="Texture2D" path="res://assets/ui/keycap.tres" id="2"]
+[ext_resource type="Shader" path="res://assets/shaders/cutout.gdshader" id="3"]
 
 [sub_resource type="ShaderMaterial" id="Cutout"]
 shader = ExtResource("3")

@@ -7,6 +7,10 @@ var _windowed_position := Vector2i.ZERO
 var _embedded_hint_shown := false
 
 
+func _ready() -> void:
+	process_mode = Node.PROCESS_MODE_ALWAYS
+
+
 func _input(event: InputEvent) -> void:
 	if not event is InputEventKey or not event.pressed or event.echo:
 		return
@@ -35,3 +39,8 @@ func toggle_fullscreen() -> void:
 		_windowed_size = window.size
 		_windowed_position = window.position
 		window.mode = Window.MODE_FULLSCREEN
+
+	GameSettings.fullscreen = window.mode in [Window.MODE_FULLSCREEN, Window.MODE_EXCLUSIVE_FULLSCREEN]
+	GameSettings.changed.emit()
+	if GameSettings.save_preferences() != OK:
+		push_warning("Pengaturan fullscreen belum tersimpan.")

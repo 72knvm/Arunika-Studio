@@ -1,0 +1,128 @@
+[gd_scene load_steps=19 format=3]
+
+[ext_resource type="Script" path="res://scripts/prolog/prolog.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/dialogue_panel.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/dialogue_choice.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/interaction_prompt.tscn" id="4"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/alarm.ogg" id="5_alarm"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/bowl.ogg" id="6_bowl"]
+[ext_resource type="Script" path="res://scripts/prolog/ambience.gd" id="7_mix"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/room.ogg" id="8_room"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/city.ogg" id="9_city"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/cook.ogg" id="10_cook"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/wind.ogg" id="11_wind"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/step_1.ogg" id="12_step"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/step_2.ogg" id="13_step"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/step_3.ogg" id="14_step"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/door.ogg" id="15_door"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/rumble.ogg" id="16_rumble"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/computer_fan.ogg" id="17_fan"]
+
+[sub_resource type="AudioStreamRandomizer" id="Audio_steps"]
+streams_count = 3
+stream_0/stream = ExtResource("12_step")
+stream_1/stream = ExtResource("13_step")
+stream_2/stream = ExtResource("14_step")
+
+[node name="PrologFlow" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1")
+
+[node name="Location" type="Node2D" parent="."]
+
+[node name="Alarm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_alarm")
+volume_db = -7.0
+
+[node name="Bowl" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_bowl")
+volume_db = -9.0
+
+[node name="DoorSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_door")
+
+[node name="Rumble" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_rumble")
+volume_db = -2.0
+
+[node name="ComputerFan" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_fan")
+volume_db = -7.0
+
+[node name="Ambience" type="Node" parent="."]
+script = ExtResource("7_mix")
+
+[node name="Room" type="AudioStreamPlayer" parent="Ambience"]
+stream = ExtResource("8_room")
+
+[node name="City" type="AudioStreamPlayer" parent="Ambience"]
+stream = ExtResource("9_city")
+
+[node name="Cook" type="AudioStreamPlayer" parent="Ambience"]
+stream = ExtResource("10_cook")
+
+[node name="Wind" type="AudioStreamPlayer" parent="Ambience"]
+stream = ExtResource("11_wind")
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+stream = SubResource("Audio_steps")
+volume_db = -9.0
+
+[node name="Interface" type="CanvasLayer" parent="."]
+layer = 20
+
+[node name="Title" type="Label" parent="Interface"]
+offset_left = 32.0
+offset_top = 20.0
+offset_right = 900.0
+offset_bottom = 65.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 26
+text = "KAMAR SAKA"
+mouse_filter = 2
+
+[node name="Prompt" type="Label" parent="Interface"]
+offset_left = 32.0
+offset_top = 877.0
+offset_right = 1640.0
+offset_bottom = 927.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 24
+text = "A/D atau ←/→: Jalan"
+mouse_filter = 2
+
+[node name="InteractionPrompt" parent="Interface" instance=ExtResource("4")]
+
+[node name="Dialogue" parent="Interface" instance=ExtResource("2")]
+playback_controls = true
+
+[node name="Choice" parent="Interface" instance=ExtResource("3")]
+
+[node name="Transition" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="Fade" type="ColorRect" parent="Transition"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Caption" type="Label" parent="Transition"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.96, 0.93, 0.84, 1)
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1

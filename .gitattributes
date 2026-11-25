@@ -1,6 +1,8 @@
 # Normalize EOL for all files that Git considers text files.
 * text=auto eol=lf
 
-# Artwork and editable Pixelorama masters
-*.png filter=lfs diff=lfs merge=lfs -text
-*.pxo filter=lfs diff=lfs merge=lfs -text
+# Keep this prototype's small artwork as regular binary files for simple clones.
+*.png binary -filter
+*.pxo binary -filter
+*.ogg binary
+*.ttf binary

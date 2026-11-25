@@ -1,0 +1,37 @@
+{
+  "rounds": [
+    {
+      "grid": [
+        ["1C", "55", "E9", "BD"],
+        ["1C", "BD", "7A", "E9"],
+        ["7A", "1C", "55", "BD"],
+        ["BD", "E9", "1C", "55"]
+      ],
+      "sequence": ["55", "BD", "1C", "7A"]
+    },
+    {
+      "grid": [
+        ["BD", "55", "7A", "1C"],
+        ["E9", "BD", "1C", "7A"],
+        ["55", "1C", "BD", "E9"],
+        ["BD", "7A", "E9", "1C"]
+      ],
+      "sequence": ["7A", "E9", "BD", "55"]
+    },
+    {
+      "grid": [
+        ["E9", "1C", "BD", "7A"],
+        ["55", "7A", "1C", "BD"],
+        ["BD", "E9", "7A", "55"],
+        ["7A", "BD", "55", "E9"]
+      ],
+      "sequence": ["E9", "BD", "55", "7A"]
+    }
+  ],
+  "safe_code": "5284",
+  "archive_title": "Catatan darurat Kakek",
+  "archive_lines": [
+    "Prototipe sabuk kusimpan di brankas bawah meja bengkel.",
+    "Pasang modul konektor pada port sabuk. Pastikan sambungannya terkunci sebelum mengaktifkan perangkat."
+  ]
+}

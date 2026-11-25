@@ -1,0 +1,4 @@
+Cursed Light — Cethiel
+Sumber https://opengameart.org/content/cursed-light
+Lisensi CC0 1.0 https://creativecommons.org/publicdomain/zero/1.0/
+theme.ogg dikonversi dari FLAC asli ke Ogg Vorbis untuk Godot.

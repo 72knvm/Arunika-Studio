@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/prolog/waterfront.tscn" id="1"]
+[ext_resource type="Script" path="res://scripts/prolog/bridge.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/prolog/bridge_dialogue.gd" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/floating_dialogue.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/prolog/kedai_set.tscn" id="5"]
+[ext_resource type="Shader" path="res://assets/shaders/bridge_morning_rays.gdshader" id="6"]
+
+[sub_resource type="ShaderMaterial" id="Sunlight"]
+resource_local_to_scene = true
+shader = ExtResource("6")
+
+[node name="BridgeLayerTest" instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="Kedai" parent="." index="3" instance=ExtResource("5")]
+
+[node name="WalkDialogue" type="Node" parent="."]
+script = ExtResource("3")
+
+[node name="Interface" type="CanvasLayer" parent="WalkDialogue"]
+physics_interpolation_mode = 2
+layer = 20
+
+[node name="Bubble" parent="WalkDialogue/Interface" instance=ExtResource("4")]
+
+[node name="MorningRays" type="ColorRect" parent="."]
+z_index = 4
+material = SubResource("Sunlight")
+mouse_filter = 2
+
+[node name="Foreground" type="CanvasLayer" parent="."]
+layer = 3
+
+[node name="Car" type="Sprite2D" parent="Foreground"]
+visible = false
+physics_interpolation_mode = 2
+texture_filter = 1
+scale = Vector2(6, 6)
+
+[node name="TrafficTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="CarSound" type="AudioStreamPlayer" parent="."]

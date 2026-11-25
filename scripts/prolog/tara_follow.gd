@@ -1,7 +1,7 @@
 extends Node2D
 ## Companion for the flat bridge route; input belongs to Saka.
 
-const FRAMES: SpriteFrames = preload("res://assets/sprites/characters/tara/tara_user_frames_v01.tres")
+const FRAMES: SpriteFrames = preload("res://assets/characters/tara/walk.tres")
 const WALK_ANCHORS := [160.0, 159.0, 172.0, 156.0, 160.0, 159.0, 172.0, 156.0]
 const IDLE_ANCHORS := [139.0, 146.0, 152.0, 146.0]
 const WALK_SOURCE_HEIGHT := 566.0
@@ -23,7 +23,7 @@ var travel_direction := 1.0
 func _ready() -> void:
 	sprite.physics_interpolation_mode = Node.PHYSICS_INTERPOLATION_MODE_OFF
 	var source_material := ShaderMaterial.new()
-	source_material.shader = preload("res://assets/shaders/sprite_alpha_cutout.gdshader")
+	source_material.shader = preload("res://assets/shaders/cutout.gdshader")
 	sprite.material = source_material
 	sprite.sprite_frames = FRAMES
 	sprite.frame_changed.connect(_align_frame)

@@ -1,0 +1,83 @@
+{
+  "warning": [
+    {"speaker":"Tara","text":"Kak... itu kotanya..."},
+    {"speaker":"Saka","text":"Tara! Jembatannya mulai retak!"},
+    {"speaker":"Saka","text":"Tetap dekat Kakak. Kita pulang."}
+  ],
+  "headache": [
+    {"speaker":"Saka","text":"Tara!"},
+    {"speaker":"Tara","text":"K-Kak... sakit..."},
+    {"speaker":"Tara","text":"Kepalaku rasanya mau pecah..."},
+    {"speaker":"Saka","text":"Duduk dulu. Jangan dipaksa berdiri.","on_advance":"tara_sits"},
+    {"speaker":"Tara","text":"Ada suara..."},
+    {"speaker":"Saka","text":"Suara apa?"},
+    {"speaker":"Tara","text":"Di kepalaku. Dari tadi manggil-manggil..."},
+    {"speaker":"Tara","text":"Aku nggak bisa bikin dia berhenti, Kak..."},
+    {"speaker":"Saka","text":"Lihat Kakak, Tara. Fokus ke suara Kakak."},
+    {"speaker":"Tara","text":"Kak... aku takut."},
+    {"speaker":"Saka","text":"Kakak di sini."}
+  ],
+  "possession": [
+    {"speaker":"Saka","text":"Tara...?"},
+    {"speaker":"Sang Hyang Kala","text":"Ribuan tahun kami menunggu di balik tirai kehampaan..."},
+    {"speaker":"Saka","text":"Siapa lu? Kenapa lu rasuki Tara? Apa yang lu mau dari adik gua?!"},
+    {"speaker":"Sang Hyang Kala","text":"Makhluk serendah kalian tak perlu memahami kami. Ingat satu nama saja. Sang Hyang Kala."},
+    {"speaker":"Sang Hyang Kala","text":"Ah… darah penjaga. Dengan darah ini, gerbang waktu akhirnya bisa kami buka."},
+    {"speaker":"Saka","text":"Lepasin adik gua!","on_advance":"anomaly_surge"},
+    {"speaker":"Saka","text":"Tara! Dengar Kakak!","on_advance":"tara_recovers"},
+    {"speaker":"Tara","text":"K-Kak Saka...?"},
+    {"speaker":"Saka","text":"Iya, Dek. Kakak di sini.","on_advance":"tara_closeup"},
+    {"speaker":"Tara","text":"Kak… suaranya makin keras."},
+    {"speaker":"Saka","text":"Kamu masih bisa denger Kakak?"},
+    {"speaker":"Tara","text":"Masih… Aku coba berdiri, Kak.","on_advance":"tara_levitates"},
+    {"speaker":"Tara","text":"Kak… aku kenapa?","pause_after":0.35}
+  ],
+  "reach": {
+    "alarm": {"speaker":"Tara","text":"KAK!","seconds":0.82},
+    "grasp": {"speaker":"Saka","text":"Tara! Pegang tangan Kakak!","seconds":2.0}
+  },
+  "departure": [
+    {"speaker":"Sang Hyang Kala","text":"Kau bahkan tak mampu meraih tangannya."},
+    {"speaker":"Saka","text":"Kalau gerbang itu yang lu mau, kenapa lu masih nahan Tara?"},
+    {"speaker":"Sang Hyang Kala","text":"Darahnya membuka jalan. Tubuh inilah yang akan membawa kami ke seberang."},
+    {"speaker":"Saka","text":"Tara… lihat Kakak, Dek. Sekali lagi."}
+  ],
+  "absence": [
+    {"speaker":"Saka","text":"...Tara?"},
+    {"speaker":"Saka","text":"Dek, jawab Kakak.","pause_after":0.8},
+    {"speaker":"Saka","text":"Tara!","pause_after":1.2},
+    {"speaker":"Saka","text":"Jangan begini... tadi kamu masih di sini."}
+  ],
+  "cry": [
+    {"speaker":"Saka","text":"Dek... ini liontin kamu."},
+    {"speaker":"Saka","text":"Kakak simpan dulu, ya...","pause_after":1.0},
+    {"speaker":"Saka","text":"Tadi... tangan kamu sudah dekat banget."},
+    {"speaker":"Saka","text":"Kenapa nggak bisa Kakak raih...?","pause_after":1.5},
+    {"speaker":"Saka","text":"Kamu pasti takut sendirian..."},
+    {"speaker":"Saka","text":"Maaf, Dek...","pause_after":1.8}
+  ],
+  "desperate": [
+    {"speaker":"Saka (batin)","text":"Kakak harus cari kamu ke mana, Dek...?"}
+  ],
+  "resonance": [
+    {"speaker":"Arkeo-Optics","text":"Rekaman anomali tersimpan."},
+    {"speaker":"Arkeo-Optics","text":"Sisa resonansi kronal terdeteksi."},
+    {"speaker":"Arkeo-Optics","text":"Koordinat tujuan belum dapat diuraikan."},
+    {"speaker":"Saka","text":"Lensanya sempat merekam..."},
+    {"speaker":"Saka","text":"Tapi lensanya nggak bisa baca semuanya.","pause_after":0.6},
+    {"speaker":"Saka","text":"Coba pindai lagi."},
+    {"speaker":"Arkeo-Optics","text":"Sebagian data tidak dapat dibaca."},
+    {"speaker":"Saka","text":"Ayolah...","pause_after":0.8},
+    {"speaker":"Saka (batin)","text":"Rekamannya masih ada. Harus ada cara lain buat membacanya."}
+  ],
+  "resolve": [
+    {"speaker":"Saka (batin)","text":"Konektor yang kukerjakan semalam..."},
+    {"speaker":"Saka (batin)","text":"Di catatan Kakek, modul itu bisa dihubungkan ke prototipe sabuk."},
+    {"speaker":"Saka (batin)","text":"Mungkin ada petunjuk lain di catatan itu."},
+    {"speaker":"Saka (batin)","text":"Sabuknya masih di brankas."},
+    {"speaker":"Saka (batin)","text":"Kakek menyimpannya buat keadaan darurat."},
+    {"speaker":"Saka","text":"Aku harus pulang.","pause_after":0.8},
+    {"speaker":"Saka","text":"Catatannya masih ada di bengkel."},
+    {"speaker":"Saka","text":"Tara... Kakak bakal cari kamu."}
+  ]
+}

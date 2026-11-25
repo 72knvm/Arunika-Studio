@@ -1,0 +1,139 @@
+{
+  "connection": [
+    {
+      "speaker": "Saka",
+      "text": "Pas... sekarang tinggal menyambungkan modulnya ke lensa."
+    },
+    {
+      "event": "connect"
+    },
+    {
+      "speaker": "Saka",
+      "text": "...Oke. Sudah terkunci."
+    },
+    {
+      "speaker": "Arkeo-Optics",
+      "text": "Perangkat eksternal terhubung."
+    },
+    {
+      "speaker": "Saka",
+      "text": "Buka lagi rekaman di jembatan."
+    }
+  ],
+  "replay": [
+    {
+      "event": "replay"
+    },
+    {
+      "speaker": "Arkeo-Optics",
+      "text": "Rekaman anomali ditemukan."
+    },
+    {
+      "speaker": "Arkeo-Optics",
+      "text": "Mengurai pola resonansi."
+    },
+    {
+      "event": "pulse"
+    },
+    {
+      "speaker": "Saka",
+      "text": "Ayolah..."
+    },
+    {
+      "event": "trace_found"
+    },
+    {
+      "speaker": "Arkeo-Optics",
+      "text": "Jejak perpindahan berhasil diuraikan."
+    },
+    {
+      "speaker": "Saka",
+      "text": "Ketemu...?"
+    },
+    {
+      "speaker": "Saka",
+      "text": "Bisa tunjukkan Tara dibawa ke mana?"
+    },
+    {
+      "speaker": "Arkeo-Optics",
+      "text": "Koordinat tujuan belum terverifikasi."
+    },
+    {
+      "event": "close_replay"
+    },
+    {
+      "speaker": "Saka",
+      "text": "Tapi jejaknya masih ada..."
+    },
+    {
+      "speaker": "Saka",
+      "text": "Coba cocokkan dengan sabuk ini."
+    },
+    {
+      "speaker": "Arkeo-Optics",
+      "text": "Sinkronisasi tersedia."
+    },
+    {
+      "prompt": "E — Aktifkan sabuk"
+    }
+  ],
+  "activation": [
+    {
+      "speaker": "Saka",
+      "text": "Tunggu Kakak, Dek."
+    },
+    {
+      "speaker": "Arkeo-Optics",
+      "text": "Sinkronisasi dimulai.",
+      "presentation": "timed_subtitle"
+    },
+    {
+      "speaker": "Saka",
+      "text": "...Kenapa barang-barangnya bergerak?",
+      "presentation": "timed_subtitle"
+    },
+    {
+      "speaker": "Arkeo-Optics",
+      "text": "Peringatan. Resonansi tidak stabil.",
+      "presentation": "timed_subtitle"
+    }
+  ],
+  "portal": [
+    {
+      "speaker": "Saka",
+      "text": "Itu... seperti yang di jembatan.",
+      "presentation": "timed_subtitle"
+    },
+    {
+      "speaker": "Saka",
+      "text": "Tunggu—!",
+      "presentation": "timed_subtitle"
+    },
+    {
+      "speaker": "Saka",
+      "text": "Berhenti! Ayo, mati!",
+      "presentation": "timed_subtitle"
+    },
+    {
+      "speaker": "Saka",
+      "text": "Aku belum—!",
+      "presentation": "timed_subtitle"
+    }
+  ],
+  "safe_callback": {
+    "speaker": "Saka",
+    "text": "...Harusnya kamu ikut lihat, Dek."
+  },
+  "false_calm": [
+    {
+      "speaker": "Saka",
+      "text": "Udah... berhenti?"
+    }
+  ],
+  "confusion": [
+    {
+      "speaker": "Saka",
+      "text": "Apa... yang terjadi?!"
+    }
+  ]
+}

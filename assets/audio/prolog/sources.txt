@@ -1,0 +1,129 @@
+KALA — Sumber efek suara prolog
+
+Efek suara dan ambience berasal dari rekaman Freesound. Musik Kala berasal dari OpenGameArt.
+Lisensi masing-masing CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+
+alarm.ogg — Alarm Clock.wav oleh bcginn
+https://freesound.org/people/bcginn/sounds/185708/
+Rekaman stereo jam alarm. Dipotong dan difilter untuk pengulangan di kamar Saka.
+
+bowl.ogg — Ceramic Tink oleh OwlStorm (Ashe Kirk)
+https://freesound.org/people/OwlStorm/sounds/209014/
+Rekaman alat makan menyentuh keramik. Bagian ketukannya dipotong untuk adegan makan.
+
+thunder.ogg — Thunder, Close oleh Fission9
+https://freesound.org/people/Fission9/sounds/505113/
+Rekaman sambaran dekat dengan Zoom H4n Pro. Bagian sambaran dipotong dan ekornya dipudarkan.
+
+door.ogg — Sci-Fi Mechanical Door oleh CheatinSloth
+https://freesound.org/people/CheatinSloth/sounds/739197/
+Rekaman piston pneumatik dan logam yang dipotong serta diturunkan nadanya.
+
+door_strain.ogg — Steel Drawer Open & Close oleh The_Isot_is_Back
+https://freesound.org/people/The_Isot_is_Back/sounds/643502/
+Gesekan laci baja dipotong dan diperdalam untuk pintu megabuilding yang ditarik paksa.
+
+safe.ogg — Light Metal Deadbolt Lock Unlock oleh loganzsound dan Steel Drawer Open & Close oleh The_Isot_is_Back
+https://freesound.org/people/loganzsound/sounds/873133/
+https://freesound.org/people/The_Isot_is_Back/sounds/643502/
+Bunyi gerendel singkat diikuti potongan laci baja saat bergeser terbuka. Keduanya dipotong, disaring, dan dicampur.
+
+belt_connect.ogg — Light Metal Deadbolt Lock Unlock oleh loganzsound
+https://freesound.org/people/loganzsound/sounds/873133/
+Ketukan gerendel dipotong pendek dan dinaikkan nadanya untuk konektor sabuk.
+
+belt_sync.ogg — 070916 Machine room air fan 2.wav oleh thaighaudio, ditambah campuran portal_bed.ogg
+https://freesound.org/people/thaighaudio/sounds/349685/
+https://freesound.org/people/HECKFRICKER/sounds/754256/
+Dengung kipas disaring dan dicampur dengan lapisan angin yang naik selama sinkronisasi.
+
+type.ogg — Typewriter keystroke oleh bubblegump1977
+https://freesound.org/people/bubblegump1977/sounds/785412/
+Satu ketukan mesin tik yang dipotong pendek dan disaring.
+
+dialogue_tick.ogg — Microwave (button) oleh Braxen
+https://freesound.org/people/Braxen/sounds/345485/
+Bip pendek yang diturunkan nadanya untuk dialog yang muncul huruf demi huruf.
+
+archive_select.ogg, archive_error.ogg, archive_success.ogg — Microwave (button) oleh Braxen
+https://freesound.org/people/Braxen/sounds/345485/
+Bip tombol dipotong dan diubah nadanya untuk pilihan kode, kesalahan, dan pemulihan arsip.
+Klik pilihan juga memakai potongan type.ogg oleh bubblegump1977.
+Klik yang sama dipakai untuk konfirmasi menu dan tombol angka brankas. Bip kesalahan dipakai juga saat kode brankas ditolak.
+
+archive_warning.ogg — Microwave (button) oleh Braxen
+https://freesound.org/people/Braxen/sounds/345485/
+Satu bagian bip difilter dan dinaikkan nadanya untuk peringatan 15 detik terakhir.
+
+rumble.ogg — 102610_distant_thunder_01.wav oleh moxobna
+https://freesound.org/people/moxobna/sounds/107518/
+Bagian gemuruh dari rekaman petir jauh, disaring untuk efek menjelang Doomsday.
+
+portal_open.ogg, portal_pull.ogg — Woosh (stick swung in the air) oleh Dalesome dan 102610_distant_thunder_01.wav oleh moxobna
+https://freesound.org/people/Dalesome/sounds/352719/
+https://freesound.org/people/moxobna/sounds/107518/
+Desir tongkat dibalik, diperlambat, dan dicampur dengan lapisan petir jauh yang disaring.
+
+portal_lightning.ogg — Thunder, Close oleh Fission9
+https://freesound.org/people/Fission9/sounds/505113/
+Potongan pendek sambaran untuk kilat yang mendahului portal Tara.
+
+portal_bed.ogg — Winter Snowstorm Ambience oleh HECKFRICKER dan 070916 Machine room air fan 2.wav oleh thaighaudio
+https://freesound.org/people/HECKFRICKER/sounds/754256/
+https://freesound.org/people/thaighaudio/sounds/349685/
+Lapisan angin dan kipas yang disaring dan dibuat berulang untuk dengung portal.
+
+tara_hearing.ogg — Turunan portal_bed.ogg oleh HECKFRICKER dan thaighaudio
+https://freesound.org/people/HECKFRICKER/sounds/754256/
+https://freesound.org/people/thaighaudio/sounds/349685/
+Frekuensi tengah disaring dan diperkuat untuk dengung yang Tara dengar saat menutup telinga.
+
+tara_lift.ogg — Woosh (stick swung in the air) oleh Dalesome
+https://freesound.org/people/Dalesome/sounds/352719/
+Desir dipotong, dibalik, diperlambat, dan difilter untuk tarikan singkat saat kaki Tara lepas dari lantai.
+
+portal_split.ogg, portal_merge.ogg — Steel Drawer Open & Close oleh The_Isot_is_Back, ditambah campuran portal_pull.ogg
+https://freesound.org/people/The_Isot_is_Back/sounds/643502/
+Potongan logam dan desir portal yang diproses untuk setiap tahap pecahnya panel.
+Untuk bunyi saat panel menyatu, campuran yang sama dibalik dan frekuensi tingginya dikurangi.
+
+pendant.ogg — Coin drop.wav oleh MPTSound
+https://freesound.org/people/MPTSound/sounds/552453/
+Potongan koin jatuh di lantai semen untuk denting liontin saat menyentuh jembatan.
+
+kala_theme.ogg — Sinister Boss Appears! oleh cynicmusic
+https://opengameart.org/content/sinister-boss-appears
+Musik kemunculan Kala. Ekor hening dipotong dan kedua ujungnya dipudarkan.
+
+room.ogg — 070916 Machine room air fan 2.wav oleh thaighaudio
+https://freesound.org/people/thaighaudio/sounds/349685/
+Rekaman kipas ventilasi untuk dengung kamar.
+
+computer_fan.ogg — 070916 Machine room air fan 2.wav oleh thaighaudio
+https://freesound.org/people/thaighaudio/sounds/349685/
+Potongan kipas difilter dan dimodulasi agar terdengar tersendat saat Saka kembali ke kamar.
+
+city.ogg — Ambience_Berlin_Rooftop.wav oleh danner
+https://freesound.org/people/danner/sounds/426894/
+Rekaman lalu lintas jauh dari atap untuk jembatan dan kedai.
+
+car_pass.ogg, car_pass_reverse.ogg — passing car.wav oleh cognito perceptu
+https://freesound.org/people/cognito%20perceptu/sounds/17926/
+Rekaman stereo mobil lewat dari dekat. Rekaman dipotong, dipersingkat, dan difilter. Kedua versi memakai kanal stereo yang saling ditukar untuk arah mobil yang berbeda.
+
+cook.ogg — Bacon Sizzling oleh timothyd4y
+https://freesound.org/people/timothyd4y/sounds/468911/
+Rekaman suara dari wajan untuk latar kedai.
+
+wind.ogg — Winter Snowstorm Ambience oleh HECKFRICKER
+https://freesound.org/people/HECKFRICKER/sounds/754256/
+Rekaman angin badai untuk jembatan setelah Doomsday dan depan megabuilding.
+
+step_1.ogg, step_2.ogg, step_3.ogg — concrete_11a_sneakers_walk.wav oleh sturmankin
+https://freesound.org/people/sturmankin/sounds/272259/
+Tiga pijakan terpisah dari rekaman sepatu di lantai beton.
+
+File di game dikonversi dari pratinjau MP3 publik Freesound ke Ogg Vorbis.
+Rekaman ambience dipotong, disaring, disetel volumenya, dan dibuat berulang dengan crossfade.
+Judul, nama pembuat, lisensi, dan tautan sumber juga tersimpan di metadata audio.

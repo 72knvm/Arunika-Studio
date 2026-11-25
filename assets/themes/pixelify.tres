@@ -1,0 +1,59 @@
+[gd_resource type="Theme" format=3 uid="uid://s7n6lrorjvme"]
+
+[ext_resource type="FontFile" uid="uid://bbngbhkvxje0q" path="res://assets/fonts/pixelify.ttf" id="1"]
+
+[sub_resource type="FontVariation" id="Medium"]
+base_font = ExtResource("1")
+variation_opentype = {
+"wght": 500.0
+}
+
+[sub_resource type="StyleBoxEmpty" id="Normal"]
+content_margin_left = 18.0
+content_margin_right = 18.0
+
+[sub_resource type="StyleBoxEmpty" id="Empty"]
+
+[sub_resource type="StyleBoxFlat" id="Highlight"]
+content_margin_left = 18.0
+content_margin_right = 18.0
+bg_color = Color(1, 0.87, 0.59, 0.04)
+border_width_left = 3
+border_color = Color(1, 0.87, 0.59, 1)
+
+[sub_resource type="FontVariation" id="Regular"]
+base_font = ExtResource("1")
+variation_opentype = {
+"wght": 400.0
+}
+
+[sub_resource type="FontVariation" id="SemiBold"]
+base_font = ExtResource("1")
+variation_opentype = {
+"wght": 600.0
+}
+
+[resource]
+default_font = SubResource("Regular")
+default_font_size = 36
+Button/colors/font_color = Color(0.96, 0.93, 0.87, 1)
+Button/colors/font_disabled_color = Color(0.58, 0.59, 0.62, 1)
+Button/colors/font_focus_color = Color(0.96, 0.93, 0.87, 1)
+Button/colors/font_hover_color = Color(1, 0.88, 0.62, 1)
+Button/colors/font_outline_color = Color(0.04, 0.06, 0.12, 0.8)
+Button/colors/font_pressed_color = Color(1, 0.88, 0.62, 1)
+Button/constants/outline_size = 2
+Button/font_sizes/font_size = 40
+Button/fonts/font = SubResource("Medium")
+Button/styles/disabled = SubResource("Normal")
+Button/styles/focus = SubResource("Empty")
+Button/styles/hover = SubResource("Highlight")
+Button/styles/normal = SubResource("Normal")
+Button/styles/pressed = SubResource("Highlight")
+Label/colors/font_color = Color(0.96, 0.93, 0.87, 1)
+Label/fonts/font = SubResource("Regular")
+RichTextLabel/fonts/bold_font = SubResource("SemiBold")
+RichTextLabel/fonts/bold_italics_font = SubResource("SemiBold")
+RichTextLabel/fonts/italics_font = SubResource("Regular")
+RichTextLabel/fonts/mono_font = SubResource("Regular")
+RichTextLabel/fonts/normal_font = SubResource("Regular")

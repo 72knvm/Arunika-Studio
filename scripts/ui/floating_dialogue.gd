@@ -3,6 +3,7 @@ extends Control
 
 signal advance_requested
 
+const TYPING_SOUND = preload("res://scripts/ui/dialogue_tick.gd")
 const PANEL_WIDTH := 660.0
 const PANEL_HEIGHT := 142.0
 const EDGE_MARGIN := 28.0
@@ -18,6 +19,7 @@ const READING_PADDING := 0.45
 @onready var panel: NinePatchRect = $Panel
 @onready var tail: TextureRect = $Tail
 @onready var body: RichTextLabel = $Text
+@onready var typing: TYPING_SOUND = $Typing
 
 var speaker: Node2D
 var _typing_elapsed := 0.0
@@ -25,6 +27,8 @@ var _reading_elapsed := 0.0
 var _reading_duration := 0.0
 var _previous_head := Vector2.ZERO
 var _current_head := Vector2.ZERO
+var _screen_anchored := false
+var _screen_head := Vector2.ZERO
 
 
 func _ready() -> void:
@@ -40,9 +44,22 @@ func _physics_process(_delta: float) -> void:
 
 
 func show_line(character: Node2D, text: String) -> void:
+	_screen_anchored = false
 	speaker = character
 	_current_head = speaker.global_transform * Vector2(0, -speaker.display_height)
 	_previous_head = _current_head
+	_start_line(text)
+
+
+func show_screen_line(text: String, head: Vector2) -> void:
+	_screen_anchored = true
+	speaker = null
+	_screen_head = head
+	_start_line(text)
+
+
+func _start_line(text: String) -> void:
+	typing.reset()
 	body.text = text
 	body.visible_characters = 0
 	_typing_elapsed = 0.0
@@ -53,6 +70,7 @@ func show_line(character: Node2D, text: String) -> void:
 
 
 func reveal_all() -> void:
+	typing.reset()
 	body.visible_characters = -1
 	_reading_elapsed = 0.0
 
@@ -68,13 +86,15 @@ func get_page_duration(text: String) -> float:
 func _process(delta: float) -> void:
 	if not visible:
 		return
-	if not is_instance_valid(speaker):
+	if not _screen_anchored and not is_instance_valid(speaker):
 		hide()
 		return
 	_update_position()
 	if body.visible_characters != -1 and body.visible_characters < body.get_total_character_count():
-		_typing_elapsed += delta
-		body.visible_characters = mini(int(_typing_elapsed * TYPE_SPEED), body.get_total_character_count())
+		var previous_count := body.visible_characters
+		_typing_elapsed += delta * GameSettings.text_speed
+		body.visible_characters = mini(int(_typing_elapsed), body.get_total_character_count())
+		typing.update_reveal(delta, body.text, previous_count, body.visible_characters)
 	elif auto_advance:
 		_reading_elapsed += delta
 		if _reading_elapsed >= _reading_duration:
@@ -86,10 +106,12 @@ func _update_position() -> void:
 	var viewport_size := get_viewport_rect().size
 	var width := minf(PANEL_WIDTH, viewport_size.x - EDGE_MARGIN * 2.0)
 	# Convert the character's head through the world camera into this UI canvas.
-	var world_head := speaker.global_transform * Vector2(0, -speaker.display_height)
-	if speaker.is_physics_interpolated_and_enabled():
-		world_head = _previous_head.lerp(_current_head, Engine.get_physics_interpolation_fraction())
-	var head: Vector2 = get_global_transform_with_canvas().affine_inverse() * speaker.get_canvas_transform() * world_head
+	var head := _screen_head
+	if not _screen_anchored:
+		var world_head := speaker.global_transform * Vector2(0, -speaker.display_height)
+		if speaker.is_physics_interpolated_and_enabled():
+			world_head = _previous_head.lerp(_current_head, Engine.get_physics_interpolation_fraction())
+		head = get_global_transform_with_canvas().affine_inverse() * speaker.get_canvas_transform() * world_head
 	var panel_x := clampf(head.x - width * 0.5, EDGE_MARGIN, viewport_size.x - EDGE_MARGIN - width)
 	var panel_y := maxf(TOP_MARGIN, head.y - HEAD_GAP - tail.size.y + 8.0 - PANEL_HEIGHT)
 	panel.position = Vector2(panel_x, panel_y).round()

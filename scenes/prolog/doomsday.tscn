@@ -1,0 +1,54 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/prolog/waterfront.tscn" id="1"]
+[ext_resource type="Script" path="res://scripts/prolog/doomsday.gd" id="2"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/thunder.ogg" id="3_thunder"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/rumble.ogg" id="4_rumble"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/pendant.ogg" id="5_pendant"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/portal_lightning.ogg" id="6_lightning"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/kala_theme.ogg" id="7_kala"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/tara_hearing.ogg" id="8_hearing"]
+[ext_resource type="AudioStream" path="res://assets/audio/prolog/tara_lift.ogg" id="9_lift"]
+
+[node name="DoomsdayIntro" instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="SeparationThunder" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_thunder")
+volume_db = -3.0
+
+[node name="WarningRumble" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_rumble")
+volume_db = -3.0
+
+[node name="PendantDrop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_pendant")
+volume_db = -7.0
+
+[node name="PortalThunder" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_lightning")
+max_polyphony = 2
+
+[node name="KalaMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_kala")
+volume_db = -15.0
+
+[node name="TaraHearing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_hearing")
+volume_db = -34.0
+
+[node name="TaraLift" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_lift")
+volume_db = -3.0
+
+[node name="DisasterFlash" type="CanvasLayer" parent="."]
+layer = 90
+
+[node name="White" type="ColorRect" parent="DisasterFlash"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0)

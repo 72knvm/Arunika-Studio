@@ -1,0 +1,16 @@
+{
+  "arrival": [
+    {"speaker":"Saka","text":"Hah... akhirnya."},
+    {"speaker":"Saka","text":"Komputernya masih nyala..."},
+    {"speaker":"Saka","text":"Catatan Kakek ada di situ. Semoga ada petunjuk buat baca rekaman tadi."}
+  ],
+  "archive_found": [
+    {"speaker":"Saka","text":"{safe_code}... Oke."},
+    {"speaker":"Saka","text":"Brankas di bawah meja bengkel. Sekarang coba kodenya."},
+    {"speaker":"Saka","text":"Tunggu sebentar lagi, Dek."}
+  ],
+  "archive_after_safe": [
+    {"speaker":"Saka","text":"Catatannya sudah kebaca."},
+    {"speaker":"Saka","text":"Sekarang aku bisa periksa lagi sambungan modulnya."}
+  ]
+}

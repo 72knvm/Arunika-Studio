@@ -1,0 +1,11 @@
+{
+  "gate_locked": [
+    {"speaker":"Saka","text":"Macet... harus kugeser paksa."}
+  ],
+  "gate_strain": [
+    {"speaker":"Saka","text":"Ayo... sedikit lagi."}
+  ],
+  "gate_open": [
+    {"speaker":"Saka","text":"Hah... akhirnya."}
+  ]
+}

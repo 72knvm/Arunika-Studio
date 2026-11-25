@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/loading_screen.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/menu/beach.tscn" id="2"]
+[ext_resource type="Theme" path="res://assets/themes/pixelify.tres" id="3"]
+
+[node name="LoadingScreen" type="Node2D"]
+script = ExtResource("1")
+
+[node name="AnimatedBackdrop" parent="." instance=ExtResource("2")]
+
+[node name="Interface" type="CanvasLayer" parent="."]
+
+[node name="Shade" type="ColorRect" parent="Interface"]
+offset_right = 1672.0
+offset_bottom = 941.0
+mouse_filter = 2
+color = Color(0.01, 0.02, 0.06, 0.45)
+
+[node name="Loading" type="Label" parent="Interface"]
+offset_left = 112.0
+offset_top = 746.0
+offset_right = 722.0
+offset_bottom = 821.0
+theme = ExtResource("3")
+theme_override_font_sizes/font_size = 44
+text = "Loading..."

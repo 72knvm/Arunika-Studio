@@ -1,0 +1,42 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/menu/beach.png" id="1"]
+[ext_resource type="Texture2D" path="res://assets/menu/body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/menu/hair.png" id="3"]
+[ext_resource type="Shader" path="res://assets/shaders/menu_stars.gdshader" id="4"]
+[ext_resource type="Shader" path="res://assets/shaders/menu_hair.gdshader" id="5"]
+[ext_resource type="Script" path="res://scripts/menu/beach.gd" id="6"]
+[ext_resource type="Script" path="res://scripts/menu/ground_shadow.gd" id="7"]
+
+[sub_resource type="ShaderMaterial" id="Background"]
+shader=ExtResource("4")
+
+[sub_resource type="ShaderMaterial" id="Hair"]
+shader=ExtResource("5")
+
+[node name="GeminiLayersPreview" type="Node2D"]
+script=ExtResource("6")
+saka_amplitude=10.0
+texture_filter=1
+
+[node name="Background" type="Sprite2D" parent="."]
+texture=ExtResource("1")
+material=SubResource("Background")
+centered=false
+
+[node name="GroundShadow" type="Node2D" parent="."]
+script=ExtResource("7")
+
+[node name="Body" type="Sprite2D" parent="."]
+position=Vector2(820,468)
+scale=Vector2(0.4013333333,0.4013333333)
+texture=ExtResource("2")
+centered=false
+
+[node name="Hair" type="Sprite2D" parent="."]
+position=Vector2(820,468)
+scale=Vector2(0.4013333333,0.4013333333)
+texture=ExtResource("3")
+material=SubResource("Hair")
+texture_filter=2
+centered=false

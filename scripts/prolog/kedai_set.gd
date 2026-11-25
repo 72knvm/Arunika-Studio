@@ -1,9 +1,9 @@
 extends Node2D
 ## Foreground set only: the bridge owns the sky, city, sea, floor, and walking actors.
 
-const KIOSK_TEXTURE: Texture2D = preload("res://assets/sprites/backgrounds/prolog/kedai/kedai_kiosks_v01.png")
-const FURNITURE_TEXTURE: Texture2D = preload("res://assets/sprites/backgrounds/prolog/kedai/kedai_furniture_v01.png")
-const MEAL_TEXTURE: Texture2D = preload("res://assets/sprites/backgrounds/prolog/kedai/kedai_meal_v01.png")
+const KIOSK_TEXTURE: Texture2D = preload("res://assets/world/kedai/kiosks.png")
+const FURNITURE_TEXTURE: Texture2D = preload("res://assets/world/kedai/furniture.png")
+const MEAL_TEXTURE: Texture2D = preload("res://assets/world/kedai/meal.png")
 const MAIN_KIOSK_REGION := Rect2(47, 47, 940, 699)
 const NEIGHBOR_REGION := Rect2(987, 47, 968, 699)
 const EMPTY_TABLE_REGION := Rect2(1077, 280, 844, 353)
@@ -76,6 +76,6 @@ func _setup_cutout(sprite: Sprite2D, source: Texture2D, region: Rect2, factor: V
 	sprite.scale = factor
 	sprite.position = baseline - Vector2(0, region.size.y * factor.y)
 	var cutout := ShaderMaterial.new()
-	cutout.shader = preload("res://assets/shaders/sprite_alpha_cutout.gdshader")
+	cutout.shader = preload("res://assets/shaders/cutout.gdshader")
 	cutout.set_shader_parameter("alpha_threshold", 0.5)
 	sprite.material = cutout
